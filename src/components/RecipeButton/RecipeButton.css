@@ -1,0 +1,24 @@
+.RecipeButton {
+    width: 220px;
+    height: 30px;
+    padding: 10px;
+    color: white;
+    background-color: fuchsia;
+    border-radius: 2px;
+    cursor: pointer;
+    box-shadow: 0 2px 2px rgba(0,0,0, 0.2);
+}
+
+.RecipeButton:hover {
+    background-color:rgba(255, 0, 255, 0.468);
+    font-weight: 600;
+}
+
+.RecipeButton:active {
+    box-shadow: none;
+}
+
+.RecipeButtonLabel {
+    font-size: 1.2rem;
+    font-weight: 100;
+}
