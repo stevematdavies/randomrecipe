@@ -1,6 +1,16 @@
 import React from 'react';
+import { getTiltClass } from '../../utils/display-utils';
 
 const tempImageUrl = "https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.8zY_Dutbil2mj5XhTYShfgHaEo%26pid%3DApi&f=1";
+
+
+const RecipeListIem =() => (
+  <div className="RecipeListItem">
+    <div className="RecipeListItemContent">
+        <span><i className="fa fa-lemon"></i>&nbsp;Ingredient</span>
+    </div>
+  </div>
+);
 
 const Recipe = () => {
   return (
@@ -18,30 +28,37 @@ const Recipe = () => {
           <div><small>(Serves 4 - medium helpings)</small></div>
         </div>
 
-        <ul className="RecipeIngredientList">
-
-          <li className="RecipeListItem">
-            <div className="RecipeItemBg">
-              <div className="RecipeItemContent">
-              <div className="RecipeItemContentInner">
-                <span><i className="fa fa-lemon"></i>&nbsp;Ingredient</span>
-                </div>
-              </div>
+        <div className="RecipeIngredientList">
+            <div className="__scroll">
+              <RecipeListIem  />
+              <RecipeListIem  />
+              <RecipeListIem  />
+              <RecipeListIem  />
+              <RecipeListIem  />
+              <RecipeListIem  />
+              <RecipeListIem  />
+              <RecipeListIem  />
+              <RecipeListIem  />
+              <RecipeListIem  />
+              <RecipeListIem  />
+              <RecipeListIem  />
+              <RecipeListIem  />
+              <RecipeListIem  />
+              <RecipeListIem  />
+              <RecipeListIem  />
+              <RecipeListIem  />
+              <RecipeListIem  />
             </div>
-          </li>
+        </div>
 
-
-        </ul>
       </div>
 
-      <div className="RecipeInstruction">
-        <p>This is how you cook it</p>
+      <div className="RecipePreparation">
+        <div className="RecipeInstruction">
+          <h1>Preparation</h1>
+          <p>This is how you cook it</p>
+        </div>
       </div>
-
-      <div className="RecipeFooter">
-        <p>Credits and kudos to....</p>
-      </div>
-
     </div>
   )
 }

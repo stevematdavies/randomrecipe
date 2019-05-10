@@ -129,17 +129,86 @@
     right: 3px;
  }
 
- .RecipeItemContent {
-    background:beige;
-    border: 3px solid white;
-    height: 99%;
-    border: 2px solid white;
+ .RecipeIngredients {
+    padding: 4px;
  }
 
- .RecipeItemContentInner {
-    height: 90%;
-    display: flex;
-    align-items: center;
-    padding-left: 12px;
-    border: 2px solid rgba(0,0,0,0.1);;
+ .RecipeIngredientList {
+
+    z-index: 1001;
  }
+
+
+ .RecipeIngredientList .__scroll {
+    overflow-x: scroll;
+    height: 400px;
+    z-index: -1;
+}
+
+
+ .RecipeListItem {
+    position: relative;
+    height: 60px;
+    width: 100%;
+    margin-bottom: 8px;
+ }
+
+ .RecipeMeta {
+    padding: 10px;
+ }
+
+ .RecipeListItemContent {
+    position: relative;
+    padding: 8px 0;
+    padding-left: 6px;
+    z-index: 2001;
+ }
+
+ .tilted-pos {
+    transform: rotate(1deg);
+    transform-origin: center;
+ }
+
+ .tilted-neg  {
+    transform: rotate(-1deg);
+    transform-origin: center;
+ }
+
+ .zero-tilt {
+    transform: rotate(0deg);
+    transform-origin: center;
+ }
+
+.RecipePreparation {
+    background:#fff;
+    box-shadow:0 1px 0 rgba(0,0,0,.2);
+    margin:2em auto;
+    padding:1em;
+    position:relative;
+    width:100%;
+ }
+
+.RecipeInstruction {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start
+}
+
+h1 {
+    font-family: "Dancing Script", cursive;
+    font-size:2em;
+    font-weight:100;
+    word-break: break-word;
+    margin:0;
+    padding:0;
+    text-align:center;
+  }
+
+  p {
+    color:#666;
+    font-weight:200;
+    text-align:center;
+  }
+
